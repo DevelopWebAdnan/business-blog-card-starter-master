@@ -30,26 +30,10 @@
   font-weight: 700;
   font-style: normal;
 }
-.lato-black {
-  font-family: "Lato", sans-serif;
-  font-weight: 900;
-  font-style: normal;
-}
-
-.poppins-medium {
-  font-family: "Poppins", sans-serif;
-  font-weight: 500;
-  font-style: normal;
-}
 
 .poppins-semibold {
   font-family: "Poppins", sans-serif;
   font-weight: 600;
-  font-style: normal;
-}
-.poppins-bold {
-  font-family: "Poppins", sans-serif;
-  font-weight: 700;
   font-style: normal;
 }
 
@@ -70,43 +54,27 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        border: 5px dashed gold;
-        padding: 150px 0;
+        padding: 150px 10px;
       }
       .blog-card {
         background-color: #FFFFFF;
-        width: min-content;
+        max-width: 418px;
         position: relative;
-        /* border-radius: 20px; */
+        border-radius: 12px;
       }
-      /* .blog-card figure {
-        position: relative;
-        border-radius: 20px;
-      } */
       .blog-card figure img {
-        border-radius: 20px;
+        border-radius: 12px;
+        width: 100%;
       }
       .blog-card #overlay {
         position: absolute;
-        /* position: relative; */
-        bottom: 256px;
+        bottom: 250px;
+        width: 100%;
       }
       .blog-content {
-        /* background-image: url('resources/white-overlay.svg');
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-color: #FFFFFF; */
-        border: 3px dashed darkcyan;
-        padding: 0 30px 15px;
-        /* position: relative; */
+        border-bottom: 1px solid #F2F5F9;
+        padding: 0 30px 20px;
       }
-      /* .blog-content figure { */
-      /* .blog-content figure #overlay { */
-      /* .blog-content #overlay {
-        position: absolute;
-        bottom: 110px;
-      } */
       .blog-title {
         font-size: 1.5rem;
         color: #111729;
@@ -119,24 +87,15 @@
       .blog-author {
         display: flex;
         padding: 20px 30px;
-        border: 3px dashed mediumorchid;
-        gap: 12px;
-        border-radius: 0 0 20px 20px;
-        /* justify-content: center; */
+        gap: 20px;
+        border-radius: 0 0 12px 12px;
         align-items: center;
       }
       .blog-author img {
         border-radius: 50%;
       }
-      .blog-author-info {
-       border: 2px dashed goldenrod;
-       /* padding: 20px;  */
-      }
       .blog-author-name {
         color: #111729;
-      }
-      .blog-author-job {
-        border: 1px solid lawngreen;
       }
 
       .author-info {
@@ -165,12 +124,12 @@
               <h3 class="blog-title poppins-semibold">Perfect solution for small business</h3>
               <p class="blog-description">Small businesses need to generate leads to grow. You can use tools like Ringy.</p>
             </div>
-            <hr>
+            <!-- <hr> -->
             <div class="blog-author">
               <img src="resources/avatar-image-business-card-1.png" alt="avatar-image-business-card-1" width="58" height="58">
-              <div class="blog-author-info">
+              <div>
                 <p class="blog-author-name lato-bold">Amy Burgess</p>
-                <p class="blog-author-job">Customer Manger, Solution Oy</p>
+                <p>Customer Manger, Solution Oy</p>
               </div>
             </div>
           </div>
@@ -179,7 +138,7 @@
     </main>
 <footer>
   <div class="author-info">
-    Coded by <a href="#">Your Name Here</a> | Challenge by
+    Coded by <a href="https://developwebadnan.github.io/web-dev-portfolio/">Adnan</a> | Challenge by
     <a href="https://www.devchallenges.io?ref=challenge" target="_blank"
       >devChallenges.io</a
     >.
