@@ -36,6 +36,17 @@
   font-style: normal;
 }
 
+.poppins-medium {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.poppins-semibold {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
 .poppins-bold {
   font-family: "Poppins", sans-serif;
   font-weight: 700;
@@ -65,36 +76,67 @@
       .blog-card {
         background-color: #FFFFFF;
         width: min-content;
+        position: relative;
+        /* border-radius: 20px; */
+      }
+      /* .blog-card figure {
+        position: relative;
+        border-radius: 20px;
+      } */
+      .blog-card figure img {
+        border-radius: 20px;
+      }
+      .blog-card #overlay {
+        position: absolute;
+        /* position: relative; */
+        bottom: 256px;
       }
       .blog-content {
-
-      }
-      /* .blog-content figure { */
-      .blog-content {
-        background-image: url('resources/white-overlay.svg');
+        /* background-image: url('resources/white-overlay.svg');
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
+        background-color: #FFFFFF; */
+        border: 3px dashed darkcyan;
+        padding: 0 30px 15px;
+        /* position: relative; */
       }
+      /* .blog-content figure { */
+      /* .blog-content figure #overlay { */
+      /* .blog-content #overlay {
+        position: absolute;
+        bottom: 110px;
+      } */
       .blog-title {
         font-size: 1.5rem;
         color: #111729;
+        margin-bottom: 10px;
+      }
+      .blog-description {
+        line-height: 24px;
       }
 
       .blog-author {
         display: flex;
+        padding: 20px 30px;
+        border: 3px dashed mediumorchid;
+        gap: 12px;
+        border-radius: 0 0 20px 20px;
+        /* justify-content: center; */
+        align-items: center;
       }
       .blog-author img {
         border-radius: 50%;
       }
       .blog-author-info {
-        
+       border: 2px dashed goldenrod;
+       /* padding: 20px;  */
       }
       .blog-author-name {
         color: #111729;
       }
       .blog-author-job {
-
+        border: 1px solid lawngreen;
       }
 
       .author-info {
@@ -115,9 +157,12 @@
       <article>
         <section class="business-blog">
           <div class="blog-card">
+            <figure>
+              <img src="resources/hero-image-1.jpg" alt="hero-image-1" width="418" height="280">
+            </figure>
+            <img id="overlay" src="resources/white-overlay.svg" alt="white-overlay image">
             <div class="blog-content">
-              <figure><img src="resources/hero-image-1.jpg" alt="hero-image-1" width="418" height="280"></figure>
-              <h3 class="blog-title poppins-bold">Perfect solution for small business</h3>
+              <h3 class="blog-title poppins-semibold">Perfect solution for small business</h3>
               <p class="blog-description">Small businesses need to generate leads to grow. You can use tools like Ringy.</p>
             </div>
             <hr>
